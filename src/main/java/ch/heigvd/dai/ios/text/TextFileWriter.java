@@ -13,7 +13,7 @@ public class TextFileWriter implements Writable {
   @Override
   public void write(String filename, int sizeInBytes) {
 
-    //class Writer is a buffer to write in a file
+    // class Writer is a buffer to write in a file
     Writer writeBuffer = null;
 
     try {
@@ -33,5 +33,4 @@ public class TextFileWriter implements Writable {
       }
     }
   }
-
 }

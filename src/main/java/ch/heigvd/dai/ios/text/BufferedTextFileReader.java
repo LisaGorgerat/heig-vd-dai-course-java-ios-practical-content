@@ -14,7 +14,7 @@ public class BufferedTextFileReader implements Readable {
   @Override
   public void read(String filename) {
     try (Reader readerBuffer = new FileReader(filename, StandardCharsets.UTF_8);
-         BufferedReader br = new BufferedReader(readerBuffer)) {
+        BufferedReader br = new BufferedReader(readerBuffer)) {
       int b;
       while ((b = br.read()) != -1) {
         // Do nothing - simulate processing

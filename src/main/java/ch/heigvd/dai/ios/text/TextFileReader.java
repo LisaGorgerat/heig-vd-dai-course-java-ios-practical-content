@@ -12,7 +12,7 @@ public class TextFileReader implements Readable {
 
   @Override
   public void read(String filename) {
-    //buffer to read a file
+    // buffer to read a file
     Reader readerBuffer = null;
 
     try {

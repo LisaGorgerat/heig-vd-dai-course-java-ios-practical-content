@@ -15,7 +15,7 @@ public class BufferedBinaryFileReader implements Readable {
   @Override
   public void read(String filename) {
     try (InputStream fis = new FileInputStream(filename);
-         BufferedInputStream bis = new BufferedInputStream(fis)) {
+        BufferedInputStream bis = new BufferedInputStream(fis)) {
       int b;
       while ((b = bis.read()) != -1) {
         // Do nothing - simulate processing

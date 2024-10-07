@@ -14,7 +14,7 @@ public class BufferedBinaryFileWriter implements Writable {
   @Override
   public void write(String filename, int sizeInBytes) {
     try (OutputStream fos = new FileOutputStream(filename);
-         BufferedOutputStream bos = new BufferedOutputStream(fos)) {
+        BufferedOutputStream bos = new BufferedOutputStream(fos)) {
       for (int i = 0; i < sizeInBytes; i++) {
         bos.write(1);
       }

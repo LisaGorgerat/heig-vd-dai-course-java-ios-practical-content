@@ -14,7 +14,7 @@ public class BufferedTextFileWriter implements Writable {
   @Override
   public void write(String filename, int sizeInBytes) {
     try (Writer writeBuffer = new FileWriter(filename, StandardCharsets.UTF_8);
-         BufferedWriter bw = new BufferedWriter(writeBuffer)) {
+        BufferedWriter bw = new BufferedWriter(writeBuffer)) {
       for (int i = 0; i < sizeInBytes; i++) {
         bw.write('A');
       }
@@ -22,5 +22,6 @@ public class BufferedTextFileWriter implements Writable {
       bw.flush();
     } catch (IOException e) {
       System.err.println("Error: " + e.getMessage());
-    }  }
+    }
+  }
 }

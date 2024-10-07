@@ -2,8 +2,8 @@ package ch.heigvd.dai.ios.binary;
 
 import ch.heigvd.dai.ios.Writable;
 import java.io.FileOutputStream;
-import java.io.OutputStream;
 import java.io.IOException;
+import java.io.OutputStream;
 
 /**
  * A class that writes binary files. This implementation writes the file byte per byte. It manages
