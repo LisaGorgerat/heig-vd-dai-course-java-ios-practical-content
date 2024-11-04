@@ -1,6 +1,6 @@
 services:
   writer:
-    image: ghcr.io/ludelafo/java-ios-docker
+    image: ghcr.io/lisagorgerat/java-ios-docker
     environment:
       IMPLEMENTATION: BUFFERED_BINARY
       SIZE: 100
@@ -17,7 +17,7 @@ services:
       - .:/data
 
   reader:
-    image: ghcr.io/ludelafo/java-ios-docker
+    image: ghcr.io/lisagorgerat/java-ios-docker
     environment:
       - IMPLEMENTATION=BUFFERED_BINARY
       - SIZE=100
