@@ -1,6 +1,6 @@
 services:
   writer:
-    image: ghcr.io/ludelafo/java-ios-docker
+    image: ghcr.io/lisagorgerat/java-ios-docker
     # Command can be written in a single line as an array (as here) or as a list
     command:
       [
@@ -13,7 +13,7 @@ services:
       - .:/data
 
   reader:
-    image: ghcr.io/ludelafo/java-ios-docker
+    image: ghcr.io/lisagorgerat/java-ios-docker
     # Command can be written in a single line as an array or as a list (as here)
     command:
       - --implementation=BUFFERED_BINARY
